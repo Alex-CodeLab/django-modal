@@ -3,7 +3,7 @@ modal windows for django/bootstrap3
 
 
 
-Requires jQuery and Bootstrap 3 on client side. Depends on django-crispy-forms on server side.
+Requires jQuery and Bootstrap. Depends on django-crispy-forms on server side.
 This app allows to make responsive AJAX modal forms for creating, editing, deleting objects in Django.
 
 This is a more generic approach to adding modal windows, based on https://github.com/FZambia/django-fm
