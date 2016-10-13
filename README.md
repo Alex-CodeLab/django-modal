@@ -70,7 +70,8 @@ You create urls for them as usual, in templates you just create links to create,
 
 
 Examples: 
-<a href="{% url 'book_detail' book.id %}" class="modal-detail" data-modal-head="" data-modal-callback="reload" >show detail </a>
-<a href="{% url 'book_delete' book.id  %}" class="btn btn-default modal-delete" data-modal-head="" data-modal-callback="reload"
+```html
+    <a href="{% url 'book_detail' book.id %}" class="modal-detail" data-modal-head="" data-modal-callback="reload" >show detail </a>
+    <a href="{% url 'book_delete' book.id  %}" class="btn btn-default modal-delete" data-modal-head="" data-modal-callback="reload"
                            role="button"> <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a>
-
+```
