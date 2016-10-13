@@ -3,7 +3,7 @@
 {% load fm_tags %}
 <div tabindex="-1" role="dialog" aria-hidden="true" id="fm-modal" class="fm-modal modal">
     <div class="modal-loader" style="display: none;">
-        <img class="modal-loader-img" src="{% static "fm/img/loading-bars.svg" %}">
+        <img class="modal-loader-img" src="{% static "modal/img/loading-bars.svg" %}">
     </div>
     <div class="modal-dialog modal-content">
         <div data-dismiss="modal" class="close-modal">
@@ -21,6 +21,5 @@
     </div>
 </div>
 <!--
-<link rel="stylesheet" href="{% static "fm/css/modal.css" %}?v={% fm_version %}" />
+<link rel="stylesheet" href="{% static "modal/css/modal.css" %}?v={% modal_version %}" />
 -->
-<script type="text/javascript" src="{% static "fm/js/fm.js" %}?v={% fm_version %}"></script>
