@@ -4,10 +4,10 @@
 
             var defaults = {
                 debug: false,
-                create_button_selector: ".fm-create",
-                update_button_selector: ".fm-update",
-                delete_button_selector: ".fm-delete",
-                modal_selector: '#fm-modal',
+                create_button_selector: ".modal-create",
+                update_button_selector: ".modal-update",
+                delete_button_selector: ".modal-delete",
+                modal_selector: '#modal-modal',
                 modal_wrapper_selector: '.modal-wrapper',
                 modal_head_selector: '.modal-head',
                 modal_body_selector: '.modal-body',
@@ -15,8 +15,8 @@
                 modal_loader_selector: '.modal-loader',
                 modal_load_error: "Error occurred while loading",
                 delegate_target: 'body',
-                trigger_event_name: 'fm.success',
-                ready_event_name: 'fm.ready'
+                trigger_event_name: 'modal.success',
+                ready_event_name: 'modal.ready'
             };
 
             var global_options = jQuery.extend(defaults, custom_options);
@@ -263,6 +263,12 @@
                 delegate_target.on('click', global_options.delete_button_selector, function () {
                     var self = $(this);
                     show_delete_modal(self);
+                    return false;
+                });
+                
+                delegate_target.on('click', global_options.detail_button_selector, function () {
+                    var self = $(this);
+                    show_modal(self);
                     return false;
                 });
             }
