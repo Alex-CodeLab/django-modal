@@ -50,10 +50,10 @@ Include modal template into your project template and initialize jQuery plugin:
 
 There are 4 class-based views in django-modal to inherit from when you want AJAX forms:
 
--    AjaxDetailView
 -    AjaxCreateView
 -    AjaxUpdateView
 -    AjaxDeleteView
+-    Detailview (generic.detail)
 
 Example: 
 ```
@@ -67,7 +67,11 @@ Example:
 
 
 
-You create urls for them as usual, in templates you just create links to create, update, delete resources with special class (modal-detail, modal-create, modal-update, modal-delete).
+In templates  create links to create, update, delete resources with special class
+ - modal-detail
+ - modal-create
+ - modal-update
+ - modal-delete
 
 
 Examples: 
