@@ -112,7 +112,7 @@ class AjaxFormMixin(JSONResponseMixin):
         return {'status': 'error', 'message': html}
 
 
-DEFAULT_FORM_TEMPLATE = getattr(settings, "FM_DEFAULT_FORM_TEMPLATE", "fm/form.html")
+DEFAULT_FORM_TEMPLATE = getattr(settings, "MODAL_DEFAULT_FORM_TEMPLATE", "modal/form.html")
 
 
 class AjaxCreateView(AjaxFormMixin, CreateView):
