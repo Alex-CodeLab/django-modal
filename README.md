@@ -56,13 +56,14 @@ There are 4 class-based views in django-modal to inherit from when you want AJAX
 -    AjaxDeleteView
 
 Example: 
+```
     class BookDelete(AjaxDeleteView):
         model   = Location
         template_name   = "book/location_delete.html"
         slug_field      = 'id'
         slug_url_kwarg  = 'book_id'
         success_url     = reverse_lazy('books_list')
-
+```
 
 
 
