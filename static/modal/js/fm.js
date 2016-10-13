@@ -1,6 +1,6 @@
 ;(function (jQuery) {
     jQuery.extend({
-        fm: function (custom_options) {
+        modal: function (custom_options) {
 
             var defaults = {
                 debug: false,
@@ -150,9 +150,9 @@
                 return {
                     url: element.attr('href'),
                     action: action,
-                    modal_head: element.attr('data-fm-head'),
-                    modal_callback: element.attr('data-fm-callback'),
-                    modal_target: element.attr('data-fm-target')
+                    modal_head: element.attr('data-modal-head'),
+                    modal_callback: element.attr('data-modal-callback'),
+                    modal_target: element.attr('data-modal-target')
                 };
             }
 
